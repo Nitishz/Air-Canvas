@@ -8,6 +8,7 @@ def func(x):
 
 # Creating Trackbars for adjusting the marker color
 cv.namedWindow("Color Detector")
+cv.resizeWindow('Color Detector', 640, 240)
 cv.createTrackbar("Min Hue", "Color Detector", 33, 179, func)
 cv.createTrackbar("Max Hue", "Color Detector", 153, 179, func)
 cv.createTrackbar("Min Sat", "Color Detector", 72, 255, func)
